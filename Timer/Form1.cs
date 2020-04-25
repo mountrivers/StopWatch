@@ -80,6 +80,11 @@ namespace Timer
             StopWatch.Text = "00:00:00";
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
 
 
         /* 종료 버튼 */

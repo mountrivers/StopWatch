@@ -45,7 +45,7 @@
             this.StopWatch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.StopWatch.Font = new System.Drawing.Font("휴먼둥근헤드라인", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.StopWatch.ForeColor = System.Drawing.SystemColors.Control;
-            this.StopWatch.Location = new System.Drawing.Point(-4, 8);
+            this.StopWatch.Location = new System.Drawing.Point(14, 8);
             this.StopWatch.Name = "StopWatch";
             this.StopWatch.Size = new System.Drawing.Size(329, 63);
             this.StopWatch.TabIndex = 0;
@@ -54,7 +54,7 @@
             // ButtonStart
             // 
             this.ButtonStart.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ButtonStart.Location = new System.Drawing.Point(331, 11);
+            this.ButtonStart.Location = new System.Drawing.Point(14, 82);
             this.ButtonStart.Name = "ButtonStart";
             this.ButtonStart.Size = new System.Drawing.Size(75, 23);
             this.ButtonStart.TabIndex = 1;
@@ -65,7 +65,7 @@
             // buttonStop
             // 
             this.buttonStop.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.buttonStop.Location = new System.Drawing.Point(331, 43);
+            this.buttonStop.Location = new System.Drawing.Point(106, 82);
             this.buttonStop.Name = "buttonStop";
             this.buttonStop.Size = new System.Drawing.Size(75, 23);
             this.buttonStop.TabIndex = 1;
@@ -76,7 +76,7 @@
             // buttonReset
             // 
             this.buttonReset.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.buttonReset.Location = new System.Drawing.Point(412, 43);
+            this.buttonReset.Location = new System.Drawing.Point(198, 82);
             this.buttonReset.Name = "buttonReset";
             this.buttonReset.Size = new System.Drawing.Size(75, 23);
             this.buttonReset.TabIndex = 1;
@@ -86,7 +86,7 @@
             // 
             // buttonExit
             // 
-            this.buttonExit.Location = new System.Drawing.Point(456, 0);
+            this.buttonExit.Location = new System.Drawing.Point(304, 82);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(39, 23);
             this.buttonExit.TabIndex = 1;
@@ -104,8 +104,9 @@
             this.panel1.Controls.Add(this.ButtonStart);
             this.panel1.Location = new System.Drawing.Point(-2, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(498, 75);
+            this.panel1.Size = new System.Drawing.Size(355, 123);
             this.panel1.TabIndex = 9;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
@@ -119,7 +120,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuText;
-            this.ClientSize = new System.Drawing.Size(491, 75);
+            this.ClientSize = new System.Drawing.Size(353, 120);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
